@@ -4,7 +4,7 @@ Source Code for the FIEST tracking algorithm
 This code contains the tracking algorithms used after image interpolation to fully track cells throughout the life cycle of the mode eukaryote S. cerevisiae. 
 It requires a folder containing the segmentations obtained from each life cycle stage-specific models. 
 The toydata set “Pos13_1_B” (also in this repository) contains a representative time series with cells undergoing a full life cycle (sporulation, germination, mating, proliferation). The masks have endings according to the segmentation model, in this example: 
-!Althttps://github.com/MirandaLab/Life_Cycle_Tracking/blob/main/Table_1.png
+!Table_1.png
 
 Noticed that for images without a detection masks are not saved to save memory. The code will extract the correct mask number by looking into the file name which has the following standardize structure: “img_000000000_Ph3_00”, where the nine zeros between the underscores can be changed to represent the current time points in the time series. For instance, image 717 will be: “img_000000717_Ph3_000”
 The tracking of all life cycle stages is done in the following steps: 
