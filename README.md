@@ -10,7 +10,6 @@ Noticed that for images without a detection masks are not saved to save memory. 
 The tracking of all life cycle stages is done in the following steps: 
 
 1. Tracking of sporulating cells using the "_TET_masks.tif” masks; lines 76 - 343. The sporulated cells might produce discontinuous tracks initially (cell masks might be missing in some time points), but the tracking code completes the missing detections by using the existing detections to produce continuous tracks. Notice in this toy data set we have a “shock period”, which represents a harsh treatment of LiCl/Nystatin for the cells, which do not move or grow during this step, therefore those time points are skipped for speed. 
-
 To visualize the tracks, use plt.imshow() in lines 259 and 325 to visualize the initial discontinuous tracks (all_obj) and the final reconstituted tracks (TET_Size). 
 
  
