@@ -11,7 +11,7 @@ The toy data set "Pos13_1_B" (also in this repository) contains a representative
 
 Notice that masks without detections are not saved to save memory. The code will extract the correct mask number by looking into the file name, which has the following standardized naming convention: "img_000000000_Ph3_00", where the nine zeros between the underscores are changed to represent the current time points in the time series starting counting from zero. For instance, image number 717 will be: "img_000000716_Ph3_000". The masks look lke this: 
 
-
+![image](Full_Life_Cycle_Masks.jpg)
 
 The tracking of all life cycle stages is done in the following steps: 
 
