@@ -1,8 +1,8 @@
 
 # Life_Cycle_Tracking
-Source Code for Life Cycle tracking used in the FIEST tracking algorithm
+Description of Source Code for Life Cycle tracking used in the FIEST tracking algorithm from https://www.biorxiv.org/content/10.1101/2024.04.25.591211v1
 
-This code contains the tracking algorithms used after image interpolation to fully track cells throughout the life cycle of the mode eukaryote S. cerevisiae. 
+This code, OAM_241106_Full_Life_Cycle_Tracking.py, contains the tracking algorithms used after image interpolation to fully track cells throughout the life cycle of the mode eukaryote S. cerevisiae. 
 It requires a folder containing the segmentations obtained from each life cycle stage-specific Cellpose models. 
 The toy data set "Pos13_1_B" (also in this repository) contains a representative time series with cells undergoing a full life cycle (sporulation, germination, mating, proliferation). The masks have endings according to the segmentation model; in this toy data example: 
 
